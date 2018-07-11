@@ -21,7 +21,7 @@ import java.util.concurrent.CountDownLatch;
 
 import java.util.Properties;
 
-public class Pipe {
+public class WordCount {
     public static void main(String args[]) throws Exception {
 
         Properties settings = new Properties();
@@ -41,7 +41,7 @@ public class Pipe {
                 .flatMapValues(new ValueMapper<String, Iterable<String>>() {
                     //@Override
                     public Iterable<String> apply(String value) {
-                        return Arrays.asList(value.toLowerCase(Locale.getDefault()).split(" "));
+                        return Arrays.asList(value.toLowerCase(Locale.getDefault()).split(""));
                     }
                 })
                 .groupBy(new KeyValueMapper<String, String, String>() {
