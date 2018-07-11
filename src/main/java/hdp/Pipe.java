@@ -2,7 +2,7 @@ package hdp;
 
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.StreamsConfig;
-import org.apache.kafka.streams.
+//import org.apache.kafka.streams.
 import java.util.Properties;
 
 public class Pipe {
