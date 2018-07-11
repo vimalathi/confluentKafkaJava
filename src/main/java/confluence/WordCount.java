@@ -1,4 +1,4 @@
-package hdp;
+package confluence;
 
 import kafka.tools.ConsoleProducer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
