@@ -25,7 +25,7 @@ public class WordCount {
     public static void main(String args[]) throws Exception {
 
         Properties settings = new Properties();
-        settings.put(StreamsConfig.APPLICATION_ID_CONFIG, "first-kafks-stream");
+        settings.put(StreamsConfig.APPLICATION_ID_CONFIG, "confluentKafkaTopic");
         settings.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         settings.put(StreamsConfig.CACHE_MAX_BYTES_BUFFERING_CONFIG, 0);
         settings.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());
