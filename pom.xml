@@ -8,5 +8,24 @@
     <artifactId>confluentKafkaJava</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <repositories>
+
+        <repository>
+            <id>confluent</id>
+            <url>http://packages.confluent.io/maven/</url>
+        </repository>
+
+        <!-- further repository entries here -->
+
+    </repositories>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka -->
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.11</artifactId>
+            <version>0.11.0.0</version>
+            </dependency>
+    </dependencies>
 
 </project>
